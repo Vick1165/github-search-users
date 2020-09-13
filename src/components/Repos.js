@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { GithubContext } from "../context/context";
-import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
+import { Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 const Repos = () => {
   const { repos } = useContext(GithubContext);
 
@@ -58,21 +58,6 @@ const Repos = () => {
     .slice(0, 5);
 
   //stars,forks
-
-  const chartData = [
-    {
-      label: "HTML",
-      value: "12",
-    },
-    {
-      label: "CSS",
-      value: "150",
-    },
-    {
-      label: "JS",
-      value: "30",
-    },
-  ];
 
   return (
     <section className="section">

@@ -3,7 +3,6 @@ import mockUser from "./mockData.js/mockUser";
 import mockRepos from "./mockData.js/mockRepos";
 import mockFollowers from "./mockData.js/mockFollowers";
 import axios from "axios";
-import { FiUserPlus } from "react-icons/fi";
 
 const rootUrl = "https://api.github.com";
 

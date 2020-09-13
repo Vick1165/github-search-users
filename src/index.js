@@ -7,11 +7,17 @@ import { GithubProvider } from "./context/context";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 ReactDOM.render(
-  <GithubProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </GithubProvider>,
+  <React.StrictMode>
+    <Auth0Provider
+      domain="dev-balaji-pro.us.auth0.com"
+      clientId="ldU2fBtKxihcF7gM0yQsFIHnSplm0RD9"
+      redirectUri={window.location.origin}
+    >
+      <GithubProvider>
+        <App />
+      </GithubProvider>
+    </Auth0Provider>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
